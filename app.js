@@ -1,3 +1,12 @@
-var g = G$('John', 'Doe');
+$('#login').click(function() {
 
-g.HTMLGreeting('#greeting');
+    // Creates the greetr object
+    var loginGrtr = G$('John', 'Doe');
+
+    // Hides the UI
+    $('#logindiv').hide();
+
+    // Chainable methods
+    // Sets language, then appends greeting based on laguage to html greeting element, then finally logs output to console. All chained!
+    loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting', true).log();
+});
