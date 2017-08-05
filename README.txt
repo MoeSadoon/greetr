@@ -1,0 +1,1 @@
+An example of a mini-library I built, making use of the jQuery library and adding my own functionality.
